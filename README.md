@@ -80,8 +80,8 @@ npm run dev:backend
 
 If you encounter a 404 error after deployment:
 
-1. We've updated the API implementation to be completely self-contained in the `api/index.js` file
-2. The API routes now use the `/api/ai/get-review` path format
+1. We've implemented a file-based API route in `api/ai/get-review.js` following Vercel's serverless function structure
+2. Each API endpoint is now a separate file in the appropriate directory
 3. Make sure your environment variables are properly set in the Vercel dashboard
 4. Check the Vercel deployment logs for any errors
 
