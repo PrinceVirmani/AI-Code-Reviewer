@@ -80,9 +80,9 @@ npm run dev:backend
 
 If you encounter a 404 error after deployment:
 
-1. Check that your API routes are correctly configured with the `/api` prefix
-2. Verify that the `vercel.json` file has the correct rewrites and functions configuration
-3. Ensure your frontend is using the correct API URL (using environment variables)
+1. We've updated the API implementation to be completely self-contained in the `api/index.js` file
+2. The API routes now use the `/api/ai/get-review` path format
+3. Make sure your environment variables are properly set in the Vercel dashboard
 4. Check the Vercel deployment logs for any errors
 
 If you encounter a runtime error:
