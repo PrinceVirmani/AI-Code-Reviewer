@@ -91,9 +91,10 @@ If you encounter a 404 error after deployment:
 
 If you encounter a runtime error:
 
-1. Make sure the runtime version in `vercel.json` is valid (e.g., `nodejs@18.x`)
+1. We've simplified the vercel.json configuration to let Vercel auto-detect the runtime
 2. Check that your Node.js version is compatible with your code
 3. Verify that all dependencies are correctly installed
+4. If issues persist, try deploying directly from the Vercel dashboard by connecting your repository
 
 ## Environment Variables
 

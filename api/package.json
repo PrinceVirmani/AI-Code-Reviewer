@@ -1,0 +1,15 @@
+{
+  "name": "code-review-api",
+  "version": "1.0.0",
+  "description": "API for code review application",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "@google/generative-ai": "^0.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7"
+  }
+}

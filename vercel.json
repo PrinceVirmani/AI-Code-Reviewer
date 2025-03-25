@@ -2,10 +2,5 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "frontend/dist",
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }],
-  "functions": {
-    "api/**": {
-      "runtime": "nodejs@18.x"
-    }
-  }
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }]
 }
