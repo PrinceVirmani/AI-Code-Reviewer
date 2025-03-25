@@ -11,20 +11,30 @@ This is a full-stack application that provides AI-powered code reviews using Goo
 
 ## Local Development
 
-### Backend
+### Install Dependencies
 
 ```bash
-cd backend
-npm install
+npm run install:all
+```
+
+This will install dependencies for the root project, frontend, and backend.
+
+### Run Development Servers
+
+To run both frontend and backend development servers concurrently:
+
+```bash
 npm run dev
 ```
 
-### Frontend
+Or run them separately:
 
 ```bash
-cd frontend
-npm install
-npm run dev
+# Frontend only
+npm run dev:frontend
+
+# Backend only
+npm run dev:backend
 ```
 
 ## Deployment to Vercel
@@ -44,24 +54,30 @@ npm run dev
 
 ### Deployment Steps
 
-1. Login to Vercel CLI:
+1. Install dependencies (if not already done):
+
+   ```bash
+   npm run install:all
+   ```
+
+2. Login to Vercel CLI:
 
    ```bash
    vercel login
    ```
 
-2. Deploy the application:
+3. Deploy the application:
 
    ```bash
    vercel
    ```
 
-3. During the deployment process:
+4. During the deployment process:
 
    - Set the root directory as the project root (not frontend or backend)
    - Vercel should automatically detect the framework as Vite
 
-4. Set up environment variables in the Vercel dashboard:
+5. Set up environment variables in the Vercel dashboard:
    - `GOOGLE_GEMINI_KEY`: Your Google Gemini API key
 
 ### Troubleshooting Deployment Issues
