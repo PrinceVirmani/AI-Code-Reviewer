@@ -54,30 +54,26 @@ npm run dev:backend
 
 ### Deployment Steps
 
-1. Install dependencies (if not already done):
-
-   ```bash
-   npm run install:all
-   ```
-
-2. Login to Vercel CLI:
+1. Login to Vercel CLI:
 
    ```bash
    vercel login
    ```
 
-3. Deploy the application:
+2. Deploy the application:
 
    ```bash
    vercel
    ```
 
-4. During the deployment process:
+   Note: The build process is configured in vercel.json to automatically install frontend dependencies and build the application.
+
+3. During the deployment process:
 
    - Set the root directory as the project root (not frontend or backend)
    - Vercel should automatically detect the framework as Vite
 
-5. Set up environment variables in the Vercel dashboard:
+4. Set up environment variables in the Vercel dashboard:
    - `GOOGLE_GEMINI_KEY`: Your Google Gemini API key
 
 ### Troubleshooting Deployment Issues
@@ -95,6 +91,13 @@ If you encounter a runtime error:
 2. Check that your Node.js version is compatible with your code
 3. Verify that all dependencies are correctly installed
 4. If issues persist, try deploying directly from the Vercel dashboard by connecting your repository
+
+If you encounter build errors:
+
+1. Check the Vercel build logs for specific error messages
+2. We've updated the build command in vercel.json to explicitly install frontend dependencies
+3. Make sure your package.json files have all the necessary dependencies
+4. Try deploying from the Vercel dashboard and manually configure the build settings
 
 ## Environment Variables
 
