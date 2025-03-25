@@ -89,6 +89,12 @@ If you encounter a 404 error after deployment:
 3. Ensure your frontend is using the correct API URL (using environment variables)
 4. Check the Vercel deployment logs for any errors
 
+If you encounter a runtime error:
+
+1. Make sure the runtime version in `vercel.json` is valid (e.g., `nodejs@18.x`)
+2. Check that your Node.js version is compatible with your code
+3. Verify that all dependencies are correctly installed
+
 ## Environment Variables
 
 ### Backend

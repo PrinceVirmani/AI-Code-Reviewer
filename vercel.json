@@ -5,7 +5,7 @@
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }],
   "functions": {
     "api/**": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs@18.x"
     }
   }
 }
